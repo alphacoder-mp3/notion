@@ -15,6 +15,13 @@
       "when": 1703566068903,
       "tag": "0001_even_roulette",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1705095906432,
+      "tag": "0002_colorful_shen",
+      "breakpoints": true
     }
   ]
 }
