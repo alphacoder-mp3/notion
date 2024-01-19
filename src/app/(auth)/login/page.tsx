@@ -111,7 +111,7 @@ const LoginPage = () => {
           {!isLoading ? 'Login' : <Loader />}
         </Button>
         <span className="self-container">
-          Dont have an account?{' '}
+          {`Don't have an account?`}{' '}
           <Link href="/signup" className="text-primary">
             Sign Up
           </Link>
