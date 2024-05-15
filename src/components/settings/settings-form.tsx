@@ -351,7 +351,7 @@ const SettingsForm = () => {
         )}
         <Alert variant={'destructive'}>
           <AlertDescription>
-            Warning! deleting you workspace will permanantly delete all data
+            Warning! deleting you workspace will permanently delete all data
             related to this workspace.
           </AlertDescription>
           <Button
@@ -366,7 +366,7 @@ const SettingsForm = () => {
             onClick={async () => {
               if (!workspaceId) return;
               await deleteWorkspace(workspaceId);
-              toast({ title: 'Successfully deleted your workspae' });
+              toast({ title: 'Successfully deleted your workspace' });
               dispatch({ type: 'DELETE_WORKSPACE', payload: workspaceId });
               router.replace('/dashboard');
             }}
@@ -458,7 +458,7 @@ const SettingsForm = () => {
             <AlertDialogTitle>Are you sure?</AlertDialogTitle>
             <AlertDescription>
               Changing a Shared workspace to a Private workspace will remove all
-              collaborators permanantly.
+              collaborators permanently.
             </AlertDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

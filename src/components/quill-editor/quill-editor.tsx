@@ -326,7 +326,7 @@ const QuillEditor: React.FC<QuillEditorProps> = ({
           payload: {
             folderId: fileId,
             folder: { data: selectedDir[0].data },
-            workspaceId: selectedDir[0].workspaceId,
+            workspaceId: selectedDir[0].workspaceId || '',
           },
         });
       }

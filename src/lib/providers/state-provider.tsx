@@ -120,7 +120,9 @@ const appReducer = (
               ...workspace,
               folders: action.payload.folders.sort(
                 (a, b) =>
+                  //@ts-ignore
                   new Date(a.createdAt).getTime() -
+                  //@ts-ignore
                   new Date(b.createdAt).getTime()
               ),
             };
@@ -136,7 +138,9 @@ const appReducer = (
             ...workspace,
             folders: [...workspace.folders, action.payload.folder].sort(
               (a, b) =>
+                //@ts-ignore
                 new Date(a.createdAt).getTime() -
+                //@ts-ignore
                 new Date(b.createdAt).getTime()
             ),
           };
